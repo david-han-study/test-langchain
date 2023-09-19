@@ -4,3 +4,4 @@ pypdf
 tiktoken
 chromadb
 streamlit-extras
+python-dotenv
