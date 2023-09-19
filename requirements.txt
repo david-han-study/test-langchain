@@ -5,4 +5,4 @@ tiktoken
 chromadb
 streamlit-extras
 python-dotenv
-pysqlite3-binary
+pysqlite3
