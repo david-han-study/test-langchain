@@ -8,7 +8,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 import streamlit as st
 import tempfile
+from streamlit_extras.buy_me_a_coffee import button
 import os
+
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
@@ -63,3 +65,4 @@ if uploaded_file is not None:
             qa_chain = RetrievalQA.from_chain_type(llm,retriever=db.as_retriever())
             result = qa_chain({"query": question})
             st.write(result["result"])
+button(username="david.han", floating=True, width=221)
